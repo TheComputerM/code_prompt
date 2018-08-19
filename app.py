@@ -64,6 +64,7 @@ def index_post():
         form = MainForm()
         if form.validate_on_submit():
             if form.addButton.data:
+                day += 1
                 newEntry = []
                 newEntry.append(day)
                 newEntry.append(int(form.itemsSold.data))
